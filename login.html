@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style1.css">
+<script src="newscript.js"></script>
+<style 
+        type="text/css">
+            .middle {
+              /* position: fixed;
+              top: 30%;
+              left: 30%;
+              /* transform: translate(-50%, -50%); */
+              /* font-size: 500%; */
+              text-align: center;
+
+            }
+
+
+            .mainpart{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+
+            }
+
+            /* .column {
+                  float: left;
+                  width: 50%;
+                  background-color: #fff;
+                }
+
+            Clear floats after the columns
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+              /* @media screen and (max-width: 600px) {
+                .column {
+                  width: 100%;
+                }
+
+              } */ 
+
+
+              /* .column1{
+                float: left;
+                  width: 50%;
+                background-image: url("comp1.jpg");
+              }
+               */
+
+        </style>
+</head>
+<body>
+
+<!-- 
+  <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+  </div> -->
+
+        <div class="buttons">
+          <h1>Login</h1>
+          <div class="">
+            <button onclick="document.getElementById('sam1').style.display='block'" >Student</button>
+            <button onclick="document.getElementById('id01').style.display='block'">Marker</button>
+            <button onclick="document.getElementById('id02').style.display='block'">Teacher</button>
+        
+          </div>
+
+        </div>
+      
+  
+<div id="sam1" class="modal">
+  <form class="modal-content animate" action="http://webprojects.eecs.qmul.ac.uk/as396/se19/StudentLogin.php" method="POST">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('sam1').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="http://webprojects.eecs.qmul.ac.uk/as396/se19/MarkerLogin.php" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="http://webprojects.eecs.qmul.ac.uk/as396/se19/TeacherLogin.php" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

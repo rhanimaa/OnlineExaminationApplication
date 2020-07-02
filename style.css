@@ -1,0 +1,70 @@
+
+    
+    body {
+        font-family: 'Overpass';
+        height: 100vh;
+        background-image: url('image1.jpeg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgb(0, 0, 0, 0.6);
+    }
+
+    .btn:link,
+    .btn:visited {
+        background-color: #330000;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        /* padding: 15px 60px; */
+        padding: 15px 50px 15px 50px;
+        margin: 5px auto;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all 0.2s;
+        position: relative;
+    }
+
+    .btn::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+
+    .btn:hover::after {
+        transform: scaleX(1.2) scaleY(1.4);
+        opacity: 0;
+    }
+
+    .btn-white::before {
+        background-color: #000;
+    }
+
+    .btn-white::after {
+        background-color: #000;
+    }
+
+    a {
+
+        width: 12%;
+        /* text-align: center; */
+    }
+
+    div {
+        text-align: center;
+        position: relative;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }

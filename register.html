@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5 align-center">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <form action="http://webprojects.eecs.qmul.ac.uk/as396/se19/Register.php" method="POST">
+            <label for="email"><b>Name</b></label>
+            <input type="text" class="form-control" placeholder="Enter Name" name="name" required>
+            <br><br>
+
+            <label for="email"><b>Username</b></label>
+            <input type="text" class="form-control" placeholder="Enter Username" name="username" required>
+            <br><br>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" class="form-control" placeholder="Enter Email" name="email" required>
+            <br><br>
+
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" class="form-control" placeholder="Enter Password" name="password" required>
+            <br><br>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" class="form-control" placeholder="Repeat Password" name="password-repeat" required><br>
+
+            <input type="radio" id="teacher" name="account" value="teacher" required>
+            <label for="male">Teacher</label>
+            <input type="radio" id="student" name="account" value="student" required>
+            <label for="female">Student</label>
+            <input type="radio" id="marker" name="account" value="marker" required>
+            <label for="female">Marker</label>
+            <br>
+            <hr>
+
+
+
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" class="registerbtn">Register</button>
+
+
+        </form>
+
+    </div>
+
+
+
+
+</body></html>
